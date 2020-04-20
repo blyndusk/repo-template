@@ -37,8 +37,7 @@ chmod +x ./.githooks/commit-msg
 
 ## IV - Stack
 
-- [Nodejs](https://nodejs.org)
-- [Hapijs](https://hapi.dev)
+- [Reactjs](https://reactjs.org)
 
 ## V - Team
 
