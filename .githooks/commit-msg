@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+import sys, re
+
+#Get the commit file
+commitMessageFile = open(sys.argv[1]) #The first argument is the file
+commitMessage = commitMessageFile.readline()
+
+print "Starting commit-msg hook: ", commitMessage
+
+# python parsing
+actions = ["Add:", "Fix:", "Remove:", "Update:"]
+action = commitMessage.split(' ', 1)[0]
+if action not in actions:
+    print """ Start you commit with what kind of action you did?
+            Add:
+            Fix:
+            Remove:
+            Update:
+            """
+
+    sys.exit(1)
+
+# Last stand
+regex = r"(Add|Fix|Remove|Update)\: (.*?)"
+if re.search(regex, commitMessage):
+    print "Commit Succeded"
+    sys.exit(0)
+else:
+    print "Error: commit does not match regex"
+    sys.exit(1)
