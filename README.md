@@ -7,6 +7,7 @@
 ```bash
 git clone https://github.com/blyndusk/PSOC-front
 git config core.hooksPath .githooks
+chmod +x ./.githooks/commit-msg
 ```
 
 ## II - Workflow Rules
