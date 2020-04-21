@@ -1,11 +1,11 @@
-# PSOC-front
+# Repo Template
 
-> Primary School Online Course - Front
+> Repo Template
 
 ## I - Install
 
 ```bash
-git clone https://github.com/blyndusk/PSOC-front
+git clone https://github.com/blyndusk/repo-template.git
 git config core.hooksPath .githooks
 chmod +x ./.githooks/commit-msg
 ```
@@ -34,17 +34,3 @@ chmod +x ./.githooks/commit-msg
 - **ALWAYS** name your commit message like that
   - `"(Add|Fix|Remove|Update): commit message"`
 - **ELSE**, your commit will be rejected by **Git hooks**
-
-## IV - Stack
-
-- [Reactjs](https://reactjs.org)
-
-## V - Team
-
-- Maxime CHARPENTIER
-- Sophia GOUNANI 
-- Alexandre DELALOY
-- Nancy CAMPBELL
-- Nino LAMOUREUX
-- Jason GOUROVITCH
-- Nicolas MARTIN
